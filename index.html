@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy Food Hotel | Online Booking</title>
+
+    <!-- fontawesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- boostrap css cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- slick slider css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <!-- main css link  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- jquery cdn link  -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- slick slider cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://alexandrebuffet.fr/codepen/slider/slick-animation.min.js"></script>
+</head>
+<!-- start header  -->
+<header class="px-4 header">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <h1>Yummy<span class="text-danger">.</span></h1>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link p-0" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-0" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-0" aria-disabled="true" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-0" aria-disabled="true" href="#events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-0" aria-disabled="true" href="#chefs">Chefs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-0" aria-disabled="true" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn btn-outline-danger rounded-5 fw-bold" id="book-btn">Book a Demo</button>
+
+            <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                aria-controls="offcanvasExample" id="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Yummy<span class="text-danger">.</span></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body text-center">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link d-inline-block" aria-current="page" href="#ome">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-inline-block" href="#home">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-inline-block" aria-disabled="true" href="#menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-inline-block" aria-disabled="true" href="#events">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-inline-block" aria-disabled="true" href="#chefs">Chefs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-inline-block" aria-disabled="true" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- end header  -->
+
+<!-- home section start  -->
+<section id="home" class="bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-7">
+                <h1 style="font-family: 'Caveat', cursive; font-size: 4rem;">Enjoy Your Healthy<br>Delicious Food
+                </h1>
+                <p>
+                    Sed autem laudantium dolores. Voluptatem itaque ea <br>consequatur eveniet. Eum quas beatae
+                    cumque
+                    <br> eum quaerat.
+                </p>
+                <div class="row">
+                    <div class="col-12 d-flex ">
+                        <button class="btn btn-outline-danger rounded-5 fw-bold border-2 px-4 py-2 me-3">Book a
+                            Table</button>
+                        <button
+                            class="btn fw-bold btn-outline-danger rounded-5 px-4 py-2 border-0 d-flex justify-content-center align-items-center"><i
+                                class="fa-regular fa-circle-play fs-2 me-2"></i>Watch Video</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5 mt-5">
+                <img src="Images/hero-img.png" alt="" class="w-100 mt-4">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- home section end  -->
+
+<!-- about section start  -->
+<section id="about">
+    <div class="cotainer mt-5">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-center">About</h3>
+                <h1 class="text-center" style="font-family:'Caveat', cursive ;">Learn More <span
+                        class="text-danger">About Us</span></h1>
+            </div>
+
+            <div class="row justify-content-center  mt-5 mx-0">
+                <div class="col-md-5 text-center mb-4">
+                    <div id="img">
+                        <div class="box">
+                            <h5 class="fw-bold mt-3">Book a Table</h5>
+                            <p class="fw-bold text-danger" style="font-size: 1.3rem;">+91 5589 55488 55</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 ms-md-5">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolore <br> magna aliqua.
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-check-double"></i> Duis aute irure dolor in reprehenderit in voluptate
+                        velit.
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda
+                        mastiro dolore eu fugiat nulla pariatur.
+                    </p>
+
+                    <p>
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident
+                    </p>
+
+                    <div class="row m-0 p-0">
+                        <div class="col-12 justify-content-center m-0 p-0 g-0">
+                            <img src="Images/about-2.jpg" alt="" class="w-100 p-0 m-0" style="height: 355px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- about section end  -->
+
+
+<!-- start cards section  -->
+<section id="why-us" class="why-us section-bg mt-5" style="width: 100%; min-height:400px; background-color: lightgrey;">
+    <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="why-box mb-4">
+                    <h3>Why Choose Yummy?</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                        Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus
+                        optio ad corporis.
+                    </p>
+                    <div class="text-center">
+                        <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div><!-- End Why Box -->
+
+            <div class="col-lg-8 d-flex align-items-center">
+                <div class="row gy-4">
+
+                    <div class="col-xl-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                            <i class="fa-solid fa-square-poll-vertical text-danger"></i>
+                            <h4>Corporis voluptates officia eiusmod</h4>
+                            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip
+                            </p>
+                        </div>
+                    </div><!-- End Icon Box -->
+
+                    <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                            <i class="fa-regular fa-gem text-danger"></i>
+                            <h4>Ullamco laboris ladore pan</h4>
+                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            </p>
+                        </div>
+                    </div><!-- End Icon Box -->
+
+                    <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="icon-box d-flex flex-column justify-content-center align-items-center">
+                            <i class="fa-solid fa-inbox text-danger"></i>
+                            <h4>Labore consequatur incidid dolore</h4>
+                            <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                        </div>
+                    </div><!-- End Icon Box -->
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- end cards section  -->
+
+<!-- start menu section  -->
+<section id="menu" class="mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-center">Our Menu</h3>
+                <h1 class="text-center" style="font-family:'Caveat', cursive ;">Check Our <span
+                        class="text-danger">Yummy Menu</span></h1>
+            </div>
+        </div>
+
+        <div class="row text-center mt-5">
+            <div class="col-md-4 mb-5">
+                <img src="Images/menu/menu-item-1.png" alt="" class="w-50">
+                <h5 class="mt-4">Magnam Tiste</h5>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+                <h4 class="text-danger fw-bolder">$5.95</h4>
+            </div>
+            <div class="col-md-4 mb-5">
+                <img src="Images/menu/menu-item-2.png" alt="" class="w-50">
+                <h5 class="mt-4">Aut Luia</h5>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+                <h4 class="text-danger fw-bolder">$14.95</h4>
+            </div>
+            <div class="col-md-4">
+                <img src="Images/menu/menu-item-3.png" alt="" class="w-50">
+                <h5 class="mt-4">Est Eligendi</h5>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+                <h4 class="text-danger fw-bolder">$8.95</h4>
+            </div>
+
+            <div class="col-md-4 mb-5">
+                <img src="Images/menu/menu-item-1.png" alt="" class="w-50">
+                <h5 class="mt-4">Magnam Tiste</h5>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+                <h4 class="text-danger fw-bolder">$5.95</h4>
+            </div>
+            <div class="col-md-4 mb-5">
+                <img src="Images/menu/menu-item-2.png" alt="" class="w-50">
+                <h5 class="mt-4">Aut Luia</h5>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+                <h4 class="text-danger fw-bolder">$14.95</h4>
+            </div>
+            <div class="col-md-4">
+                <img src="Images/menu/menu-item-3.png" alt="" class="w-50">
+                <h5 class="mt-4">Est Eligendi</h5>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+                <h4 class="text-danger fw-bolder">$8.95</h4>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end menu section  -->
+
+<!-- start section events  -->
+<section id="events" class="bg-light w-100 mt-3 min-vh-100">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 my-5 text-center">
+                <h3>Events</h3>
+                <h1 style="font-family:'Caveat', cursive ;">Share <span class="text-danger">Your Moments</span> In Our
+                    Restaurant</h1>
+            </div>
+            <section class="banner__slider">
+                <div class="slider stick-dots">
+                    <div class="slide">
+                        <div class="slide__img">
+                            <img src="" alt=""
+                                data-lazy="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                                class="full-image animated" data-animation-in="zoomInImage" />
+                        </div>
+                        <div class="slide__content ">
+                            <div class="slide__content--headings text-center">
+
+                                <p class="animated top-title" data-animation-in="fadeInUp" data-delay-in="0.3">Welcome
+                                    to Shareat restaurant</p>
+                                <h2 class="animated title" data-animation-in="fadeInUp">Let Enjoy The Rhym Of Fooday
+                                    Dishes</h2>
+                                <button class="btn-light btn button-custom animated" data-animation-in="fadeInUp">Our
+                                    menu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__img">
+                            <img src="" alt=""
+                                data-lazy="https://images.unsplash.com/photo-1550461716-dbf266b2a8a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+                                class="full-image animated" data-animation-in="zoomOutImage" />
+                        </div>
+                        <div class="slide__content slide__content__right">
+                            <div class="slide__content--headings text-right">
+                                <p class="animated top-title" data-animation-in="fadeInLeft" data-delay-in="0.2">Wish
+                                    you have good food at our restaurant</p>
+                                <h2 class="animated title" data-animation-in="fadeInLeft">Experience the food</h2>
+                                <button class="btn-success btn button-custom animated text-white"
+                                    data-animation-in="fadeInUp">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide__img">
+                            <img src="" alt=""
+                                data-lazy="https://images.unsplash.com/photo-1502741126161-b048400d085d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                                class="full-image animated" data-animation-in="zoomInImage" />
+                        </div>
+                        <div class="slide__content slide__content__left">
+                            <div class="slide__content--headings text-left">
+                                <p class="animated top-title" data-animation-in="fadeInRight" data-delay-in="0.2">
+                                    Purchase today. just $76</p>
+                                <h2 class="animated title" data-animation-in="fadeInRight">SUPER DEAL LUNCH</h2>
+                                <button class="btn-light btn button-custom animated"
+                                    data-animation-in="fadeInUp">Today's Menu</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="44px" height="44px"
+                        id="circle" fill="none" stroke="currentColor">
+                        <circle r="20" cy="22" cx="22" id="test">
+                    </symbol>
+                </svg> -->
+            </section>
+        </div>
+    </div>
+</section>
+<!-- end section events  -->
+
+
+<!-- start section chefs  -->
+<section id="chefs" style="background-color: lightgrey;" class="w-100 mt-5 h-100">
+    <div class="container">
+        <div class="col-12 text-center my-5">
+            <h3 class="mt-5">Chefs</h3>
+            <h1 style="font-family:'Caveat', cursive ;">Our <span class="text-danger">Proffesional</span> Chefs</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Images/chefs/chefs-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Walter White</h5>
+                        <p>Master Chef</p>
+                        <p class="card-text">Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa
+                            quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Images/chefs/chefs-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Sarah Jhonson</h5>
+                        <p>Patissier</p>
+                        <p class="card-text">Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa
+                            quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Images/chefs/chefs-3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">William Anderson</h5>
+                        <p>Cook</p>
+                        <p class="card-text">Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa
+                            quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end section chefs  -->
+
+
+<!-- start section contact  -->
+<section class="container mt-5" id="contact">
+    <div class="row">
+        <div class="col-12 text-center mb-5">
+            <h3>Contact</h3>
+            <h1 style="font-family:'Caveat', cursive ;">Need Help? <span class="text-danger">Contact Us</span></h1>
+        </div>
+        <div class="col-sm-12 mb-4 col-md-5">
+            <div class="card border-primary rounded-0">
+                <div class="card-header p-0">
+                    <div class="bg-primary text-white text-center py-2">
+                        <h3><i class="fa fa-envelope me-3"></i>Contact US</h3>
+                    </div>
+                </div>
+                <div class="card-body p-3">
+
+                    <div class="form-group">
+                        <label class="fw-bold my-2"> Your name </label>
+                        <div class="input-group">
+                            <input value="" type="text" name="data[name]" class="form-control"
+                                id="inlineFormInputGroupUsername" placeholder="Your name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="fw-bold my-2">Your email</label>
+                        <div class="input-group mb-2 mb-sm-0">
+                            <input type="email" value="" name="data[email]" class="form-control"
+                                id="inlineFormInputGroupUsername" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="fw-bold my-2">Subject</label>
+                        <div class="input-group mb-2 mb-sm-0">
+                            <input type="text" name="data[subject]" class="form-control"
+                                id="inlineFormInputGroupUsername" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="fw-bold my-2">Message</label>
+                        <div class="input-group mb-2 mb-sm-0">
+                            <input type="text" class="form-control" name="mesg" placeholder="Messsage">
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <button class="btn btn-primary">Submit</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-7">
+            <div class="mb-4">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d117223.77996815204!2d85.3213263!3d23.3432048!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x11b5a9b0042eef56!2sourcita.com!5e0!3m2!1sen!2sin!4v1589706571407!5m2!1sen!2sin"
+                    width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <a class="bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block"><i
+                            class="fa fa-map-marker"></i></a>
+                    <p>529 Clementina Crest</p>
+                </div>
+                <div class="col-md-4">
+                    <a class="bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block"><i
+                            class="fa fa-phone"></i></a>
+                    <p>+91- 90000000</p>
+                </div>
+                <div class="col-md-4">
+                    <a class="bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block"><i
+                            class="fa fa-envelope"></i></a>
+                    <p>abcd@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end section contact  -->
+
+<!--start footer  -->
+<div class="footer-basic">
+    <footer>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-instagram" style="color: #fff;"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter" style="color: #fff;"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook" style="color: #fff;"></i></a>
+        </div>
+
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Home</a></li>
+            <li class="list-inline-item"><a href="#">Services</a></li>
+            <li class="list-inline-item"><a href="#">About</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+        </ul>
+        <p class="copyright">Company Name © 2018</p>
+    </footer>
+</div>
+<!--end footer  -->
+
+<!-- boostrap js cdn link  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- main js link  -->
+<script src="script.js"></script>
+
+<!-- slick slider  -->
+</body>
+
+</html>
